@@ -30,7 +30,7 @@ server.listen(process.env.PORT || process.env.ALT_PORT, () => {
 });
 
 // MongoDB Database connection
-const MONGO_URI = 'mongodb+srv://Killercrosx:rze0bTX02OOupNt6@node-restapi-dev.lrapc.mongodb.net/?retryWrites=true&w=majority&appName=node-restapi-dev';
+const MONGO_URI = 'mongodb://localhost:27017/express-typescript'; // replace with your mongo database URI
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URI);
